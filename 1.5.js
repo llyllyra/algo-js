@@ -5,7 +5,7 @@ const readlineSync = require("readline-sync");
 let nomberOne = Number(readlineSync.question("Quelle est votre premier chiffre a virgule"))
 let nomberTwo= Number(readlineSync.question("Quelle est votre deuxieme chiffre a virgule"))
 //faire le calcul
-let nomber = Number.parseInt(nomberOne) * nomberTwo
+let nomber = parseInt(nomberOne) * nomberTwo
 
 
 //Afficher le chiffre
