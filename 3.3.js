@@ -1,0 +1,1 @@
+// Write a program that will create a duplicate of a given array.
