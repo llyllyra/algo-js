@@ -15,6 +15,15 @@ Write a documentation for the calcDistance function.
 Note: You probably need to make some search on Google to learn the mathematical formula to do that. You will also probably need to search for useful functions in JavaScript to help you making complex mathematical formulas...
  */
 
+/**
+ *
+ * @param ay int
+ * @param ax int
+ * @param by
+ * @param bx
+ * @returns {number}
+ */
+
 let calcDistance = (ay,ax, by, bx) =>
 {
     return parseInt(Math.sqrt((bx - by)**2 + (by-ay)**2))
