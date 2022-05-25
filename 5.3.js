@@ -16,7 +16,7 @@ function nestedArrayAndObject() {
     let {title: serie , protagonist: {name: Hero, enemies: [{name: Enemies, title: title}]} } = info
     // const {} = info // <-- replace the next few `const` lines with this
 
-    for ()
+    //for ()
     return console.log(`${Enemies} (${title}) is an enemy to ${Hero} in "${serie}"`)
 
 }
