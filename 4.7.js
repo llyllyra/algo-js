@@ -33,4 +33,5 @@ let elevator = (left, right, current)=>{
 
 }
 
+elevator(0, 1 , 0)
 elevator(0, 1 , 1)

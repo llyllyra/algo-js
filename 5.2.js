@@ -29,10 +29,8 @@ let randomizeCast = (serie) => {
         if (Cast1.indexOf(name) === -1) {
             Cast1.push(name)
         }
-        else {
-            Cast1.push(1)
-        }
     }
+    // {"Name":"Buffy","Year":"97","Cast":["Amber","Brandon","Alyssa","SMG"]}
     return {
         "Name" : serie.Name,
         "Year" : serie.Year,

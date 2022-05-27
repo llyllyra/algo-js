@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@angular/cli": "^13.3.7",
     "readline-sync": "^1.4.10"
   }
 }

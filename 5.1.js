@@ -24,7 +24,7 @@ let askTvSerie = () => {
     }
     while(choix !== "n")
     return {
-        "Name" : Name,
+        "tv Name" : Name,
         "Year" : Year,
         "Cast": Cast
 
