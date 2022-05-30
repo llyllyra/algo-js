@@ -2,11 +2,11 @@
 const readlineSync = require("readline-sync");
 let number
 number = readlineSync.question("Quelle est votre chiffe prefere?")
-if (number != 42 )
+if (number !== 42 )
 do{
     number = readlineSync.question("Quelle est votre chiffe prefere?")
-    if (number != 42 ){
+    if (number !== 42 ){
         let question = readlineSync.question("Are you sure?")
     }
 }
-while (number != 42 )
+while (number !== 42 )
