@@ -20,4 +20,5 @@ function nestedArrayAndObject() {
     return console.log(`${Enemies} (${title}) is an enemy to ${Hero} in "${serie}"`)
 
 }
+
 nestedArrayAndObject()
