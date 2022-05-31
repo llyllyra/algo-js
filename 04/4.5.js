@@ -17,16 +17,17 @@ Note: You probably need to make some search on Google to learn the mathematical 
 
 /**
  *
- * @param ay int
- * @param ax int
- * @param by
- * @param bx
  * @returns {number}
+ * @param array1
+ * @param array2
  */
 
-let calcDistance = (ay,ax, by, bx) =>
-{
-    return parseInt(Math.sqrt((bx - by)**2 + (by-ay)**2))
-}
 
-console.log(calcDistance(1,1,3,1))
+let calcDistance = (array1,array2) =>
+{
+
+    return parseInt(Math.sqrt((array2[0] - array1[0])**2 + (array2[1]- array1[1])**2))
+}
+let array1 = [1,1]
+let array2 = [3,1]
+console.log(calcDistance(array1,array2))

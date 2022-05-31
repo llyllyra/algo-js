@@ -7,11 +7,20 @@ In the case where both elevators are equally distant from the called floor, choo
 
 You can assume that the inputs will always be valid integers between 0-2.
  */
+/**
+ *
+ * @param left
+ * @param right
+ * @param current
+ */
 
 let elevator = (left, right, current)=>{
     let diffL
     let diffR
     let porte = ""
+
+
+
     if (left < current){
        diffL = current - left
     }else {

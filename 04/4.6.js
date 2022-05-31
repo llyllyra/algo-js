@@ -15,5 +15,6 @@ let factorial = (nbr) =>
     // appelez à nouveau la procédure récursive
     return nbr * factorial(nbr-1);
 }
+
 let nbr = readlineSync.question("Quelle est le chiffre? ")
 console.log(factorial(nbr));

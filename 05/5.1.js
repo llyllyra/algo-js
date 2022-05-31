@@ -27,7 +27,6 @@ let askTvSerie = () => {
         "tv Name" : Name,
         "Year" : Year,
         "Cast": Cast
-
     }
 }
 let Serie= askTvSerie()

@@ -3,19 +3,21 @@ There is a queue for the self-checkout tills at the supermarket. Your task is wr
  */
 
 let queueTime = (array, n) => {
-    if(n === 1){
-        return console.log(array.reduce((a,b) => a + b ,0))
+    if (n === 0){
+        return console.log("Il n'y a pas de caisse");
     }
-    else {
-        if(Math.max(...array) > array[array.length-1] ){
-            return   console.log(Math.max(...array))
-        }
-        else{
-            return console.log(Math.max(...array)+ Math.min(...array))
-        }
+    if (n === 1) {
+        return console.log(array.reduce((a, b) => a + b, 0));
     }
-
+    if (Math.max(...array) > array[array.length - 1]) {
+        return console.log(Math.max(...array));
+    } else {
+        return console.log(Math.max(...array) + Math.min(...array));
+    }
 }
-queueTime([5,3,4], 1)
-queueTime([10,2,3,3], 2)
-queueTime([2,3,13], 2)
+
+queueTime([5, 3, 4], 1);
+queueTime([10, 2, 3, 3], 2);
+queueTime([10, 5, 8, 2], 2);
+queueTime([2, 3, 13], 2);
+queueTime([2, 3, 13], 0);
