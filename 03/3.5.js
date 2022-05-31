@@ -9,7 +9,7 @@ let sum
 
 
 const pos = array.filter((el) => el >= 0)
-                .reduce((previous, current) => previous + current, 0);
+                 .reduce((previous, current) => previous + current, 0);
 
 
 // correction nico

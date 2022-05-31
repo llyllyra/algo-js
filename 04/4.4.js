@@ -37,15 +37,18 @@ let average = (array) => {
 let min = (array )=> {
     return Math.min(... array)
 }
+
 let max = (array )=> {
     return Math.max(... array)
 }
 
+let main = () =>{
+    let n = readlineSync.question("Combien de chiffre random voulez vous?")
+    let array = multiRand(n)
+    console.log(array)
+    console.log(average(array))
+    console.log(min(array))
+    console.log(max(array))
 
-
-let n = readlineSync.question("Combien de chiffre random voulez vous?")
-let array = multiRand(n)
-console.log(array)
-console.log(average(array))
-console.log(min(array))
-console.log(max(array))
+}
+main()

@@ -9,7 +9,7 @@ You will have to search on Google how to generate random numbers in JavaScript f
 
 
 let rand10 =  (min, max)=>{
-    return Math.floor(Math.random() * (max +1 - min)+min);
+    return Math.floor(Math.random() * (max +1)+ min);
 }
 
 console.log(rand10(1, 10))

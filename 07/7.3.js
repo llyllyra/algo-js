@@ -21,9 +21,7 @@ let divisor = () => {
                 }
             }
         }
-
     }
-
 }
 
 divisor()

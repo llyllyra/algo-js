@@ -8,13 +8,13 @@ Use that function to create a program that will ask the number of random numbers
 const readlineSync = require("readline-sync");
 
 
-
 let multiRand = (n) => {
-    let rand10 =  ()=>{
-        return Math.floor(Math.random() * 10 +1);
+    let rand10 =  (min, max)=>{
+        return Math.floor(Math.random() * (max +1)+ min);
     }
 
     let array = []
+
     do(
         array.push(rand10(1,10))
     )
