@@ -3,10 +3,10 @@ class Person{
         this.lastname = lastname;
         this.firstname= firstname;
     }
-    get Name(){
+    get getName(){
         return  console.log(`${this.firstname} ${this.lastname}`)
     }
-    set Name(Fullname){
+    set setName(Fullname){
         let array = Fullname.split(" ");
         this.firstname = array[0];
         this.lastname = array[1];
@@ -14,6 +14,6 @@ class Person{
 }
 
 MyPerson = new Person("Marlene","Bouvard");
-MyPerson.Name
-MyPerson.Name="Llyllyra Nydaleniel";
-MyPerson.Name
+MyPerson.getName
+MyPerson.setName="Llyllyra Nydaleniel";
+MyPerson.getName

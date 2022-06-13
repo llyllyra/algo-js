@@ -23,14 +23,14 @@ let askTvSerie = () => {
 }
 let randomizeCast = (serie) => {
     for(let i = serie.Cast.length-1 ; i>0 ;i--){
-        let j = Math.floor( Math.random() * (i + 1) ); //random index
-        [serie.Cast[i],serie.Cast[j]]=[serie.Cast[j],serie.Cast[i]]; // swap
+        let j = Math.floor( Math.random() * (i + 1) );
+        [serie.Cast[i],serie.Cast[j]]=[serie.Cast[j],serie.Cast[i]];
     }
     // {"Name":"Buffy","Year":"97","Cast":["Amber","Brandon","Alyssa","SMG"]}
     return {
-        "Name" : Name,
-        "Year" : Year,
-        "Cast": Cast
+        "Name" : serie.Name,
+        "Year" : serie.Year,
+        "Cast": serie.Cast
 
     }
 
@@ -39,4 +39,4 @@ let randomizeCast = (serie) => {
 
 let Serie= askTvSerie()
 let randomiser = randomizeCast(Serie)
-console.log(JSON.stringify(randomiser))
+console.log(randomiser)

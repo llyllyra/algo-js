@@ -6,8 +6,8 @@ class Animal {
 }
 
 class dog extends Animal{
-    static greeting
-    constructor(name, greeting) {
+    static greeting = "ouf"
+    constructor(name) {
         super();
         this.name = name
         this.greeting = greeting
@@ -28,7 +28,7 @@ class cat extends Animal{
     }
 }
 
-let chien =new dog("Loto", "ouaf")
+let chien =new dog("Loto")
 let chat =new cat("kitty", "Miaou")
 console.log(chien.sayHello())
 console.log(chat.sayHello())

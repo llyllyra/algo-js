@@ -24,10 +24,11 @@ let askTvSerie = () => {
     }
     while(choix !== "n")
     return {
-        "tv Name" : Name,
+        "Tv_Name" : Name,
         "Year" : Year,
         "Cast": Cast
     }
 }
 let Serie= askTvSerie()
 console.log(JSON.stringify(Serie))
+
